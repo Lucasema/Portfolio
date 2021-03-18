@@ -13,6 +13,8 @@ p, h1, h2, blockquote{
 /*HEADER*/
 
 header{
+    display:flex;
+    justify-content: flex-end;
     background-color: #eaeaea;
     width: 100%;
     position: fixed;
@@ -70,6 +72,37 @@ a:link, a:visited, a:active {
 
 a:hover{
     color: #3a2449 ;
+}
+
+.div-hamburguesa{
+    padding: 20px;
+}
+
+.boton-hamburguesa{
+    background-color: #eaeaea;
+    border: none;
+    padding:5px;
+    color: #4f6d7a; 
+}
+
+.boton-hamburguesa:hover{
+    color: #3a2449;
+}
+
+.boton-hamburguesa:active{
+    box-shadow: 0 0 5px 3px  #747c92;
+}
+
+.fa-bars{
+    font-size: 25px;
+}
+
+.fa-bars:active{
+    font-size: 25px;
+}
+
+.oculto{
+    display: none;
 }
 
 /*PRESENTACIÒN*/
@@ -305,9 +338,13 @@ footer{
 /*RESPONSIVE*/
 
 @media (max-width: 1024px) {
- header{
+ nav{
      display:none;
- }   
+ } 
+ .oculto{
+     display:flex;
+ }
+  
 }
 
 @media (max-width: 600px) {
@@ -386,8 +423,20 @@ footer{
         list-style-type: none;
         align-items: center;
     
-    }
-
-    
+    }   
    
+}
+
+@media (max-width: 400px){
+    .saludo{
+        font-size: 21px;
+    }
+    
+    .nombre{
+        font-size:40px;
+    }
+    
+    .datos{
+        font-size:13px;
+    }   
 }
